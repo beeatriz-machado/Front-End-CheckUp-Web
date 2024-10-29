@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Button Navigation</title>
+    <link rel="stylesheet" href="Uploadteste.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+
+    <div class="master">
+      <div id="mySidenav" class="sidenav"></div>
+
+
+        <div class="event">
+
+            <button class="nav-btn" onclick="addNavButton()">Adicionar Upload <span class="material-icons">file_upload</span></button>
+
+        </div>
+
+  
+
+  
+    <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+            <h2>Qual nome do seu upload?</h2>
+            <p>Dê um nome ao seu arquivo</p>
+            <div class="add-btn-section">
+                <input class="input-box" type="text" id="btnName" placeholder="Digite aqui">
+      
+            </div>
+            <div class="button-container">
+                <button class="confirm-btn" onclick="confirmUpload()">Confirmar</button>
+                <button class="close-btn" onclick="fecharPopup()">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  <script src="Uploadteste.js"></script>
+
+</body>
+</html>
