@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Fragmentos</title>
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <!-- Elemento onde o header será inserido -->
+    <div id="header-container"></div>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <h2></h2>
+        <p>        </p>
+    </main>
+
+    <!-- Elemento onde o footer será inserido -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Função para carregar um arquivo HTML e inserir no elemento de destino
+        function loadHTML(file, elementId) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar o arquivo:', error));
+        }
+
+        // Chame a função para carregar o header e footer
+        loadHTML('navigation.html', 'header-container');
+    </script>
+</body>
+</html>

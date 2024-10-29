@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup na Mesma Página</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button onclick="abrirPopup()">Abrir Popup</button>
+
+<div id="popup" class="popup-overlay">
+    <div class="popup-content">
+        <h2>Qual nome do seu upload?</h2>
+        <p>Dê um nome ao seu arquivo</p>
+        <button class="confirm-btn" onclick="fecharPopup()">Confirmar</button>
+        <button class="close-btn" onclick="fecharPopup()">Fechar</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

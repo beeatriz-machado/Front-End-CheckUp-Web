@@ -1,0 +1,32 @@
+@import url('cores.css');
+*{
+    font-family: "Poppins";
+}
+
+.button{
+    width: 100%;
+    padding: 3%;
+    border-radius: 20px;
+    border: 2px solid #fff; 
+    color: #fff;
+    font-size: 20;
+    cursor: pointer;
+    margin-bottom: 3%;   
+    background: linear-gradient(90deg, #2856f9, #00d9ff);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.button-event{
+    background-color: var(--azul);
+    border-radius: 20px;
+    width: 40vh;
+    /* color: ; */
+    font-weight: bold;
+    font-size: 18px;
+}

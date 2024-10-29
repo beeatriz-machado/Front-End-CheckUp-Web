@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>principal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="principal.css" rel="stylesheet" />
+  </head>
+  <body>
+    
+    <!-- CONFIGURAÇÕES DE NAVEGAÇÃO -->
+    <nav class="navbar">
+      <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+      <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+        <span class="material-icons">menu</span>
+      </button>
+      <h1 class="navbar-title">CheckUp+</h1>
+      <nav class="navbar-menu">
+        <button type="button" class="active">Principal</button>
+        <button type="button" >Registrar</button>
+        <button type="button">Arquivos</button>
+        <button type="button">Perfil</button>
+        
+      </nav>
+      
+     
+    </nav>
+
+
+    <!-- CONFIGURAÇÕES DE INFORMAÇÕES DA TELA PRINCIPAL -->    
+    <div class="principal"> <!-- DIV PRINCIPAL - SUPORTA TODA PARTE DE INFORMAÇÕES DA TELA -->
+    <div class="master-left">   
+    <div class="box-left"> <!-- DIV BOX-LEFT - SUPORTA INFORMAÇÕES DA BARRA LATERAL: CALENDARIO E PRÓXIMO EVENTO -->
+
+      <div class="calendar"> add calendario </div> <!-- DIV CALENDAR - SUPORTA O CALENDARIO (PARTE SUPERIOR DA DIV) -->
+      
+      <div class="info-next"><!-- DIV INFO-NEXT - SUPORTA AS INFORMAÇÕES DE PRÓXIMA CONSULTA (PARTE INFERIOR DA DIV) -->
+        <h4>Próximo evento</h4>
+        <div class="info-consulta">
+          <p>adicionar logica com js para informar qual será a proxima consulta</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="box-center">  <!-- DIV BOX-CENTER - SUPORTA PARTE CENTRAL DA DIV  -->
+    
+      <div class="event">
+        
+      <div class="img">
+        <img class="img" src="../logo/blue.png" alt=""> </div>
+        <button class="button-event">+ Adicionar evento</button>
+        
+      </div>
+
+
+
+  
+    </div>
+  
+
+
+
+
+
+  </div>
+  
+
+
+
+</body>
+</html>
