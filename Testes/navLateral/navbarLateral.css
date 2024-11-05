@@ -1,0 +1,17 @@
+@import url('../../token/main.css');
+
+*{
+    font-family: "Poppins";
+}
+
+.box-nav{
+    margin-top: 3%;
+    background-color: white;
+    width: 25vh;
+}
+
+.navbar-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre os botões */
+}

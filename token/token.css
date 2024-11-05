@@ -1,0 +1,76 @@
+/* estilos.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f7ff;
+}
+
+.left{
+    /* background-color: #2d9df9; */
+    background-color: var(--azul);
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.login-box {
+    width: 300px;
+    /* background-color: red; */
+}
+
+.login-box h2{
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.input-box{
+    margin-bottom: 5%;
+    position: relative;
+    
+}
+
+.button-box{
+    /* background-color: #000; */
+    margin-top: 3%;
+    /* background-color: aqua; */
+}
+
+
+.img-box{
+    width: 300px;
+    /* background-color: black; */
+
+
+        /* margin-bottom: 5%;
+    text-align: center; */
+
+}
+
+.img{
+    /* position: relative;
+    align-items: center; */
+
+    /* max-width: 300px; Largura do elemento */
+    /* margin: 0 auto; Margens automáticas à esquerda e à direita */
+    margin-bottom: 5%;
+    align-items: center;
+    
+
+}
+

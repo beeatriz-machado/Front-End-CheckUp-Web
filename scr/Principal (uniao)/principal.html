@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>principal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="principal.css" rel="stylesheet" />
+  </head>
+  <body>
+    
+
+
+
+   <div class="box-navtop"> 
+    <nav class="navbar">
+      <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+      <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+        <span class="material-icons">menu</span>
+      </button>
+      <h1 class="navbar-title">CheckUp+</h1>
+      <nav class="navbar-menu">
+        <button type="button" class="active">Principal</button>
+        <button type="button" >Registrar</button>
+        <button type="button">Arquivos</button>
+        <button type="button">Perfil</button>
+        
+      </nav>
+     
+    </nav> </div>
+  
+
+  <div class="box-navleft"> 
+    <nav class="nav-left"> 
+      <!-- <div class="navbar-overlay" onclick="toggleMenuOpen()"></div> -->
+
+<!-- <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+  <span class="material-icons">menu</span>
+</button> -->
+<!-- <h1 class="navbar-title">CheckUp+</h1> -->
+<nav class="navbar-left">
+  <p>Bara de registro</p>
+  <hr>
+  <button type="button" class="button-navbar" onclick="highlightButton(this)">Medicamentos</button>
+  <button type="button" class="button-navbar" onclick="highlightButton(this)">Glicose</button>
+  <button type="button" class="button-navbar" onclick="highlightButton(this)">Pressão</button>
+  <button type="button" class="button-navbar" onclick="highlightButton(this)">Alergias</button>
+  <button type="button" class="button-navbar" onclick="highlightButton(this)">Notas</button>
+  
+</nav>
+
+  </nav>
+
+
+  <div class="box-table">
+
+    <form name="fPessoas">
+      <div id="dfPessoas" class="container">
+
+      <div class="box-label">
+      <label class="label-tabela" >Data</label>
+      <label class="label-tabela">Horário</label>
+      <label class="label-tabela">Nivel de glicose</label>
+      <label class="label-tabela">Jejum</label>
+      </div>
+      <div class="box-input">
+      <input type="date" name="txtData" class="input-tabela">
+      <input type="time" name="txtConsulta" class="input-tabela">
+      <input type="number" name="txtMedico" class="input-tabela">
+      <div class="box-yesno"> 
+          <button class="button-yesno">Sim</button>
+          <button class="button-yesno"> Não</button>
+      </div>
+
+      </div>
+      
+  </div>
+
+      <input class="button-event" type="button" value="Salvar" onclick="cadPessoa(txtData.value, txtConsulta.value, txtMedico.value, txtClinica.value)"> <br> <br>
+
+
+  
+
+
+  </form>
+
+
+</div>
+
+<!-- <br> <br> -->
+
+<div id="dtPessoas">
+  <table id="tbPessoas">
+      <thead>
+          <tr>
+              <td>codigo</td>
+              <td>Data</td>
+              <td>Consulta</td>
+              <td>Médico</td>
+              <td>Clínica</td>
+              <td>Ação</td>
+          
+          </tr>
+
+
+      </thead>
+
+  </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ </div>
+  </body>
+</html>

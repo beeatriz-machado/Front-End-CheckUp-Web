@@ -1,0 +1,32 @@
+@import url('cores.css');
+.input{
+    width: 100%;
+    padding: 3% 7%;
+    border-radius: 20px;
+    border: 2px solid var(--azul);
+    outline: none;
+    font-size: 20;
+}
+.input-box i{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--azul);
+}
+
+.input-tabela{
+    width: 50vh;
+    /* height: -20px; */
+    /* padding: 3% 7%; */
+    height: 23px;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    border: 2px solid var(--cinza);
+    background-color: white;
+    /* margin-left: 100vh; */
+    /* outline: none; */
+    /* font-size: 20; */
+    
+
+}
