@@ -1,0 +1,49 @@
+/* Barra de topo */
+.top-bar {
+    background: rgb(121,195,255);
+    background: linear-gradient(90deg, rgba(121,195,255,1) 0%, rgba(45,157,249,1) 35%, rgba(0,138,252,1) 74%, rgba(1,112,204,1) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Estilos gerais */
+body {
+    font-family: "Poppins";
+    color: #2b2927;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+    text-align: left; /* Alinha o texto à esquerda */
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza o contêiner na página */
+}
+
+.message, .confirm-text, .footer {
+    font-size: 12.5px;
+    margin: 10px 0;
+}
+
+.greeting {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Botão de confirmar */
+.confirm-button {
+    display: block;
+    background-color: #0e91fd;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px auto; /* Centraliza o botão */
+    width: max-content; /* Ajusta o tamanho ao conteúdo */
+}
