@@ -1,5 +1,5 @@
 .box-navleft{
-    margin-top: 3%;
+    margin-top: 25%;
     background-color: white;
     width: 25vh;
     height: 100vh;
@@ -16,6 +16,7 @@
   .navbar-left p{
     text-align: center;
     color: var(--cinza-font);
+    margin-top: 5%;
   
   }
   

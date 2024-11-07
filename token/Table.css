@@ -7,7 +7,7 @@
     height: 100vh;
     margin-left: 25vh;
     /* margin-bottom: 70vh; */
-    margin-top: -45vh;
+    /* margin-top: 45vh; */
   
   
   
@@ -18,7 +18,7 @@
   .container {
       display: flex;
       margin-top: 25vh;
-      margin-left: 50vh;
+      margin-left: -5vh;
       /* background-color: purple; */
   }
   
@@ -31,12 +31,13 @@
   .label-tabela {
       display: block; /* Display labels as block elements for better formatting */
       padding: 5px;
+      margin-top: -10px;
       
   }
   
   .input-tabela{
       width: 50%;
-      margin-left: -75%;
+      margin-left: -65%;
       /* flex: 1; */
       /* height: 1px; */
   }
@@ -55,11 +56,11 @@
       margin-left: 40%;
       margin-top: 8%;
   }
-  
+
   .box-yesno{
       /* background-color: red; */
-      margin-left: -75%;
-      width: 51%;
+      margin-left: -70%;
+      width: 50%;
   }
   
   .input-tabela{
