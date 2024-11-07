@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glicose</title>
+
+    <!-- Importação de arquivos -->
+    <script src="glicose.js"></script>
+    <link rel="stylesheet" href="MarcarConsulta.css">
+    <script src="../../../Otimizar/CarregaConteudoHtml.js"></script>
+
+</head>
+
+<body>
+
+    <!-- --------- Divs para armazenar Navigations --------- -->
+    <div id="header-container"></div>
+    <div id="content-container"></div>
+    <!-- <div id="footer-container"></div> -->
+
+    <!-- --------- Divs para armazenar Navigations --------- -->
+
+    
+
+    <div class="box-table">
+
+      <form name="fPessoas">
+        <div id="dfPessoas" class="container">
+
+          <div class="box-label">
+
+            <label class="label-tabela" >Data</label>
+            <label class="label-tabela">Consulta</label>
+            <label class="label-tabela">Médico</label>
+            <label class="label-tabela">Clínica</label>
+
+          </div>
+
+          <div class="box-input">
+
+            <input type="date" name="txtData" class="input-tabela">
+            <input type="time" name="txtConsulta" class="input-tabela">
+            <input type="number" name="txtMedico" class="input-tabela">
+
+          </div>
+        
+        </div>
+
+        <input class="button-event" type="button" value="Salvar" 
+        onclick="cadPessoa(txtData.value, txtConsulta.value, txtMedico.value, txtClinica.value)"> 
+        
+        <br> <br>
+
+      </form>
+
+
+    </div>
+
+<!-- <br> <br> -->
+
+    <!-- <div id="dtPessoas">
+
+      <table id="tbPessoas">
+          <thead>
+              <tr>
+
+                  <td>codigo</td>
+                  <td>Data</td>
+                  <td>Consulta</td>
+                  <td>Médico</td>
+                  <td>Clínica</td>
+                  <td>Ação</td>
+              
+                </tr>
+          </thead>
+      </table>
+    </div> -->
+
+
+
+
+  <script>
+    // Carregando os arquivos HTML
+    loadHTML('header-container', '../../../Otimizar/NavigationTop.html');
+    loadHTML('content-container', '../../../Otimizar/NavigationLeft.html');
+    // loadHTML('footer-container', 'footer.html');
+  </script>
+
+</body>
+</html>
