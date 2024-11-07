@@ -1,3 +1,4 @@
+@import url('../token/botoes.css');
 /* Barra de topo */
 .top-bar {
     background: rgb(121,195,255);
@@ -36,14 +37,8 @@ body {
 }
 
 /* Botão de confirmar */
-.confirm-button {
+.button-event{
     display: block;
-    background-color: #0e91fd;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 15px auto; /* Centraliza o botão */
-    width: max-content; /* Ajusta o tamanho ao conteúdo */
+    font-size: 12px;
+    margin: 15px auto;
 }
