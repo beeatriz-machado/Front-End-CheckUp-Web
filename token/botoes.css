@@ -135,3 +135,75 @@
 }
 
 /* ---------------------- Botão de Sim e Não na tabela  ----------------------  */
+
+
+
+
+
+
+/* ---------------------- Botão de fechar (PopUp) ----------------------  */
+.close-btn {
+    width: 6%;
+    padding: 1%;
+    border-radius: 100%;
+    border: transparent;
+    color: #fff;
+    font-size: 20;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 3%;   
+    background: rgb(255,81,81);
+    /* background: linear-gradient(90deg, rgba(255,81,81,1) 0%, rgba(255,66,66,1) 35%, rgba(255,107,99,1) 74%, rgba(255,126,126,1) 100%); */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    margin-left: 95%;
+    margin-bottom: 5%;
+
+}
+
+
+.close-btn:hover{
+    opacity: 0.9;
+    transform: scale(1.07);
+    background-color: red;
+    color: #fff;
+}
+/* ---------------------- Botão de fechar (PopUp) ----------------------  */
+
+
+/* ---------------------- Botão de Confirmar (PopUp) ----------------------  */
+.confirm-btn{
+    width: 100%;
+    padding: 3%;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 20;
+    cursor: pointer;
+    margin-bottom: 3%;   
+    background: linear-gradient(90deg, #2856f9, #00d9ff);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+
+.confirm-btn:hover{
+    opacity: 0.9;
+    transform: scale(1.07);
+    background-color: #0e91fd;
+    color: #fff;
+}
+
+/* ---------------------- Botão de Confirmar (PopUp) ----------------------  */
+
+
+/* ---------------------- Botão de Abrir PopUp ----------------------  */
+.open-button{
+    border-radius: 100px;
+    background-color: var(--azul);
+    color: white;
+    border: 0px;
+    font-weight: bold;
+}
+/* ---------------------- Botão de Abrir PopUp ----------------------  */
