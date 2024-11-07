@@ -1,0 +1,40 @@
+
+.box-center{
+    /* background-color: aqua; */
+  
+    flex: 0 0 78%;
+    margin-top: 12vh;             
+    padding: 20px;
+    /* background-color: #f39c12; */
+    color: white;
+    text-align: center;
+     
+  
+  }
+  .event{
+    margin-top: 5vh;
+    width: 150vh;
+    height: 70vh;
+    padding: 3%;
+    border-radius: 2vh;
+    border: 2px ; 
+    color: #fff;
+    font-size: 20;
+    margin-bottom: 3%;   
+    background: var(--azul-bebe);
+  }
+  
+  .img{
+    
+    display: block;        /* Faz a imagem ocupar a largura total do contêiner */
+    margin: 10vh auto;        /* Centraliza horizontalmente */
+    width: 15vh;
+    height: auto;
+  
+  }
+  
+  .button-event{
+    margin-top: 10vh;
+  
+  }
+  

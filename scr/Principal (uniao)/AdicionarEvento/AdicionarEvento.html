@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adicionar Evento</title>
+
+    <!-- Importação de arquivos -->
+    <link href="AdicionarEvento.css" rel="stylesheet" />
+    <script src="../../Otimizar/CarregaConteudoHtml.js"></script>
+
+  </head>
+  <body>
+
+      <!-- --------- Divs para armazenar Navigations --------- -->
+      <div id="header-container"></div>
+      <div id="content-container"></div>
+      <!-- <div id="footer-container"></div> -->
+  
+      <!-- --------- Divs para armazenar Navigations --------- -->
+
+
+      <!-- CONFIGURAÇÕES DE INFORMAÇÕES DA TELA PRINCIPAL -->    
+      <div class="principal"> <!-- DIV PRINCIPAL - SUPORTA TODA PARTE DE INFORMAÇÕES DA TELA -->
+
+        <div class="master-left">   
+          <div class="box-left"> <!-- DIV BOX-LEFT - SUPORTA INFORMAÇÕES DA BARRA LATERAL: CALENDARIO E PRÓXIMO EVENTO -->
+
+            <div class="calendar"> add calendario </div> <!-- DIV CALENDAR - SUPORTA O CALENDARIO (PARTE SUPERIOR DA DIV) -->
+            
+            <div class="info-next"><!-- DIV INFO-NEXT - SUPORTA AS INFORMAÇÕES DE PRÓXIMA CONSULTA (PARTE INFERIOR DA DIV) -->
+                
+              <h4>Próximo evento</h4>
+                <div class="info-consulta">
+                  <p>adicionar logica com js para informar qual será a proxima consulta</p>
+                
+                </div>
+            </div>
+
+          </div>
+      </div>
+
+
+        <div class="box-center">  <!-- DIV BOX-CENTER - SUPORTA PARTE CENTRAL DA DIV  -->
+        
+          <div class="event">
+            
+            <div class="img">
+              
+              <img class="img" src="../logo/blue.png" alt=""> </div>
+              <button class="button-event">+ Adicionar evento</button>
+              <!-- Adicionar lógica de Onclick para direcionar para tela de consultas
+               Criar telas de consultas
+               Testar onclick com tela de pressão ou glicose -->
+            
+          </div>
+
+        </div>
+    
+      </div>
+  
+
+
+  <script>
+    // Carregando os arquivos HTML
+    loadHTML('header-container', '../../Otimizar/NavigationTop.html');
+    // loadHTML('content-container', '../../Otimizar/NavigationLeft.html');
+    // loadHTML('footer-container', 'footer.html');
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+@import url('../../../token/styles/MainAddEvent.css');
+/* @import url('../../../token/cores.css'); */
+
+
+.principal{    
+  display: flex;       /* Alinha os elementos filhos em linha */
+  gap: 20px;
+  /* background-color: red; */
+
+}
+

@@ -1,0 +1,12 @@
+@import url('../../../token/main.css');
+@import url('../../../token/cores.css');
+@import url('../../../token/botoes.css');
+@import url('../../token/NavigationTop.css');
+@import url('../Fragmentos/AddEventoLeft.css');
+@import url('../Fragmentos/AddEventoCenter.css');
+
+
+/* Este arquivo foi criado com intuito de armazenar as estilizações necessárias para a tela principal 
+Tela Principal: NavBarTop e NavBarLeft
+Dessa forma, para as telas que contém essas configurações, só é preciso importar este arquivo para ter toda estilização.
+*/
