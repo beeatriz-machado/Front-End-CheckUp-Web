@@ -15,53 +15,24 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link href="principal.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="glicose.css"> -->
+    <!-- <link href="principal.css" rel="stylesheet" /> -->
+    <!-- <link rel="stylesheet" href="../Tokens html/header.html"> -->
     <script src="javascript/glicose.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+</head>
   </head>
   <body>
-    
+
+
+    <div id="header-container"></div>
+    <div id="content-container"></div>
+    <!-- <div id="footer-container"></div> -->
 
 
 
-   <div class="box-navtop"> 
-    <nav class="navbar">
-      <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
 
-      <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
-        <span class="material-icons">menu</span>
-      </button>
-      <h1 class="navbar-title">CheckUp+</h1>
-      <nav class="navbar-menu">
-        <button type="button" class="active">Principal</button>
-        <button type="button" >Registrar</button>
-        <button type="button">Arquivos</button>
-        <button type="button">Perfil</button>
-        
-      </nav>
-     
-    </nav> </div>
-  
 
-  <div class="box-navleft"> 
-    <nav class="nav-left"> 
-      <!-- <div class="navbar-overlay" onclick="toggleMenuOpen()"></div> -->
-
-<!-- <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
-  <span class="material-icons">menu</span>
-</button> -->
-<!-- <h1 class="navbar-title">CheckUp+</h1> -->
-<nav class="navbar-left">
-  <p>Bara de registro</p>
-  <hr>
-  <button type="button" class="button-navbar" onclick="highlightButton(this)">Medicamentos</button>
-  <button type="button" class="button-navbar" onclick="highlightButton(this)">Glicose</button>
-  <button type="button" class="button-navbar" onclick="highlightButton(this)">Pressão</button>
-  <button type="button" class="button-navbar" onclick="highlightButton(this)">Alergias</button>
-  <button type="button" class="button-navbar" onclick="highlightButton(this)">Notas</button>
-  
-</nav>
-
-  </nav>
 
 
   <div class="box-table">
@@ -155,5 +126,23 @@
 
 
  </div>
-  </body>
+
+
+ <script>
+  // Função para carregar o conteúdo de um arquivo HTML
+  function loadHTML(id, file) {
+      fetch(file)
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById(id).innerHTML = data;
+          });
+  }
+
+  // Carregando os arquivos HTML
+  loadHTML('header-container', '../Tokens html/NavigationTop.html');
+  loadHTML('content-container', '../Tokens html/NavigationLeft.html');
+  // loadHTML('footer-container', 'footer.html');
+</script>
+
+</body>
 </html>

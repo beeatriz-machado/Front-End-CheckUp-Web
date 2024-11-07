@@ -1,0 +1,15 @@
+@import url(../../token/styles/MainPrincipal.css);
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #f4f7ff;
+    font-family: "Poppins";
+  }
+
+
+
+
+
