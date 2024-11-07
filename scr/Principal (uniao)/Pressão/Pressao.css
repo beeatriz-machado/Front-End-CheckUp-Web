@@ -1,4 +1,6 @@
 @import url(../../../token/styles/MainPrincipal.css);
+@import url(../../../token/Table.css);
+
 
 * {
     box-sizing: border-box;
@@ -8,6 +10,8 @@
     background: #f4f7ff;
     font-family: "Poppins";
   }
+
+
 
 
 

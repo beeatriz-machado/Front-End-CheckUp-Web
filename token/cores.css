@@ -1,10 +1,10 @@
 :root {
-  --offwhite: #f4f7ff;
-  --azul: #2d9df9;
-  --azul-bebe: #bae1ff;
-  --cinza: #cfcfcf;
-  --cinza-font: #606060;
-  --azulWhite: #f4f7ff;
+  --offwhite: #f4f7ff;        /* Cor de fundo */
+  --azul: #2d9df9;            /* Azul Padrão */
+  --azul-bebe: #bae1ff;       /* Azul clarinho para contraste */
+  --cinza: #cfcfcf;           /* Cor para linhas */
+  --cinza-font: #606060;      /* Fontes acinzentadas */
+  --azulWhite: #f4f7ff;       
 
 
 }

@@ -4,4 +4,10 @@
 @import url('../../../token/inputs.css');
 @import url('../../token/NavigationTop.css');
 @import url('../../token/NavigationLeft.css');
-@import url('../../token/Table.css');
+
+
+
+/* Este arquivo foi criado com intuito de armazenar as estilizações necessárias para a tela principal 
+Tela Principal: NavBarTop e NavBarLeft
+Dessa forma, para as telas que contém essas configurações, só é preciso importar este arquivo para ter toda estilização.
+*/

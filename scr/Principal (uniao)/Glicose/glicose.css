@@ -1,4 +1,5 @@
-@import url(../../token/styles/MainPrincipal.css);
+@import url(../../../token/styles/MainPrincipal.css);
+@import url(../../../token/Table.css);
 
 * {
     box-sizing: border-box;

@@ -1,4 +1,7 @@
 @import url('cores.css');
+
+
+/* ---------------------- Input de email e senha  ----------------------  */
 .input{
     width: 100%;
     padding: 3% 7%;
@@ -14,7 +17,11 @@
     transform: translateY(-50%);
     color: var(--azul);
 }
+/* ---------------------- Input de email e senha  ----------------------  */
 
+
+
+/* ---------------------- Input para tabela  ----------------------  */
 .input-tabela{
     width: 50vh;
     /* height: -20px; */

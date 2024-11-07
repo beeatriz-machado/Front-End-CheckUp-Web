@@ -3,6 +3,8 @@
     font-family: "Poppins";
 }
 
+/* ---------------------- Botão de cadastro e entrar  ----------------------  */
+
 .button{
     width: 100%;
     padding: 3%;
@@ -20,8 +22,15 @@
 .button:hover {
     opacity: 0.9;
     transform: scale(1.05);
+    /* background-color: #2856f9; */
 }
 
+/* ---------------------- Botão de cadastro e entrar  ----------------------  */
+
+
+
+
+/* ---------------------- Botão Adicionar Evento ----------------------  */
 .button-event{
     background-color: var(--azul);
     border-radius: 20px;
@@ -36,16 +45,42 @@
     opacity: 0.9;
     transform: scale(1.05);
 }
+/* ---------------------- Botão Adicionar Evento ----------------------  */
 
 
 
-/* Botões do NavBar Lateral */
+/* ---------------------- Botão do NavBar Topo  ----------------------  */
+.navbar-menu > button {
+    color: rgba(255, 255, 255, 0.5);
+    background: transparent;
+    padding: 0 8px;
+  }
+  .navbar-menu > button:hover{
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+
+  }
+  
+  .navbar-menu > button.active {
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+  }
+/* ---------------------- Botão do NavBar Topo  ----------------------  */
+
+
+
+/* ---------------------- Botão do NavBar Lateral  ----------------------  */
+
 .button-navbar{
     background-color: white;
     border: 0;
     padding: 8%;
     
+    
 }
+
 
 .button-navbar:hover{
     opacity: 0.9;
@@ -54,16 +89,29 @@
     /* background-color: var(--azul); */
     font-weight: bold;
     /* color: #fff; */
+    /* background-color: red; */
 }
+
+/* ---------------------- Botão do NavBar Lateral  ----------------------  */
+
+
+
+
 
 .button-active {
     border-left: 5px solid var(--azul);
     background-color: var(--azulWhite);
     font-weight: bold;
+    /* background-color: pink; */
+
 }
 
 
-/* Botões de Sim e Não da tabela */
+
+
+
+/* ---------------------- Botão de Sim e Não na tabela  ----------------------  */
+
 .button-yesno{
     width: 30%;
     margin-left: 13%;
@@ -72,6 +120,7 @@
     border: 2px solid #fff; 
     font-size: 15px;
 }
+
 
 .button-yesno:hover{
     opacity: 0.9;
@@ -82,3 +131,5 @@
     /* font-weight: bold; */
     color: #fff;
 }
+
+/* ---------------------- Botão de Sim e Não na tabela  ----------------------  */

@@ -1,3 +1,5 @@
+
+/* Box para armazenar Navigation Lateral */
 .box-navleft{
     margin-top: 25%;
     background-color: white;
@@ -5,14 +7,16 @@
     height: 100vh;
   }
   
+/* Nav que armazena botoes e texto */
   .navbar-left{
+    /* background-color: pink; */
     margin-top: 5vh;
     display: flex;
     flex-direction: column;
     gap: 10px; /* Espaçamento entre os botões */
   }
   
-  
+/* Estiliza o texto superior do Navigation */
   .navbar-left p{
     text-align: center;
     color: var(--cinza-font);
