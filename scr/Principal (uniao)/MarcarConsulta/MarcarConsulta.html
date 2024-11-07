@@ -1,15 +1,18 @@
+<!-- Conferir campos de label e input -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Glicose</title>
+    <title>Marcar Consulta</title>
 
     <!-- Importação de arquivos -->
     <script src="glicose.js"></script>
     <link rel="stylesheet" href="MarcarConsulta.css">
-    <script src="../../../Otimizar/CarregaConteudoHtml.js"></script>
+    <script src="../../Otimizar/CarregaConteudoHtml.js"></script>
+    <!-- <link rel="stylesheet" href="../../Otimizar/NavigationLeft.html"> -->
 
 </head>
 
@@ -31,7 +34,7 @@
 
           <div class="box-label">
 
-            <label class="label-tabela" >Data</label>
+            <label class="label-tabela">Data</label>
             <label class="label-tabela">Consulta</label>
             <label class="label-tabela">Médico</label>
             <label class="label-tabela">Clínica</label>
@@ -41,8 +44,9 @@
           <div class="box-input">
 
             <input type="date" name="txtData" class="input-tabela">
-            <input type="time" name="txtConsulta" class="input-tabela">
-            <input type="number" name="txtMedico" class="input-tabela">
+            <input type="text" name="txtConsulta" class="input-tabela">
+            <input type="text" name="txtMedico" class="input-tabela">
+            <input type="text" name="txtClinica" class="input-tabela">
 
           </div>
         
@@ -83,8 +87,8 @@
 
   <script>
     // Carregando os arquivos HTML
-    loadHTML('header-container', '../../../Otimizar/NavigationTop.html');
-    loadHTML('content-container', '../../../Otimizar/NavigationLeft.html');
+    loadHTML('header-container', '../../Otimizar/NavigationTop.html');
+    loadHTML('content-container', '../../Otimizar/NavigationLeft.html');
     // loadHTML('footer-container', 'footer.html');
   </script>
 

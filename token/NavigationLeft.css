@@ -6,7 +6,8 @@
     width: 25vh;
     height: 100vh;
   }
-  
+
+
 /* Nav que armazena botoes e texto */
   .navbar-left{
     /* background-color: pink; */
@@ -18,9 +19,10 @@
   
 /* Estiliza o texto superior do Navigation */
   .navbar-left p{
+
     text-align: center;
     color: var(--cinza-font);
-    margin-top: 5%;
+    margin-top: 30px;
   
   }
   

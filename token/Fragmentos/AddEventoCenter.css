@@ -21,7 +21,7 @@
     color: #fff;
     font-size: 20;
     margin-bottom: 3%;   
-    background: var(--azul-bebe);
+    background: white;
   }
   
   .img{
@@ -34,7 +34,7 @@
   }
   
   .button-event{
-    margin-top: 10vh;
+    margin-top: 35vh;
   
   }
   
