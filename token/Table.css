@@ -1,0 +1,68 @@
+
+
+
+.box-table{
+    /* background-color: red; */
+    width:190vh;
+    height: 100vh;
+    margin-left: 25vh;
+    /* margin-bottom: 70vh; */
+    margin-top: -45vh;
+  
+  
+  
+  }
+  
+  
+  
+  .container {
+      display: flex;
+      margin-top: 25vh;
+      margin-left: 50vh;
+      /* background-color: purple; */
+  }
+  
+  .box-label{
+      flex: 1;
+      /* background-color: aquamarine; */
+      
+  }
+  
+  .label-tabela {
+      display: block; /* Display labels as block elements for better formatting */
+      padding: 5px;
+      
+  }
+  
+  .input-tabela{
+      width: 50%;
+      margin-left: -75%;
+      /* flex: 1; */
+      /* height: 1px; */
+  }
+  
+  
+  
+  .box-input {
+      flex: 1;
+      /* background-color: blueviolet; */
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .button-event{
+      width: 10%;
+      margin-left: 40%;
+      margin-top: 8%;
+  }
+  
+  .box-yesno{
+      /* background-color: red; */
+      margin-left: -75%;
+      width: 51%;
+  }
+  
+  .input-tabela{
+      width: 50vh;
+      /* margin-left: vh; */
+  }

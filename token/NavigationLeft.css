@@ -1,0 +1,21 @@
+.box-navleft{
+    margin-top: 3%;
+    background-color: white;
+    width: 25vh;
+    height: 100vh;
+  }
+  
+  .navbar-left{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre os botões */
+  }
+  
+  
+  .navbar-left p{
+    text-align: center;
+    color: var(--cinza-font);
+  
+  }
+  

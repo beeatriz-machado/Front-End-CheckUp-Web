@@ -38,6 +38,8 @@
 }
 
 
+
+/* Botões do NavBar Lateral */
 .button-navbar{
     background-color: white;
     border: 0;
@@ -60,6 +62,8 @@
     font-weight: bold;
 }
 
+
+/* Botões de Sim e Não da tabela */
 .button-yesno{
     width: 30%;
     margin-left: 13%;
