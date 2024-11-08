@@ -1,0 +1,94 @@
+<!-- Conferir campos de label e input -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcar Consulta</title>
+
+    <!-- Importação de arquivos -->
+    <script src="Anotacao.js"></script>
+    <link rel="stylesheet" href="Anotacao.css">
+    <script src="../../Otimizar/CarregaConteudoHtml.js"></script>
+    <!-- <link rel="stylesheet" href="../../Otimizar/NavigationLeft.html"> -->
+
+</head>
+
+<body>
+
+    <!-- --------- Divs para armazenar Navigations --------- -->
+    <div id="header-container"></div>
+    <div id="content-container"></div>
+    <!-- <div id="footer-container"></div> -->
+
+    <!-- --------- Divs para armazenar Navigations --------- -->
+
+    
+
+    <div class="box-table">
+
+      <form name="fPessoas">
+        <div id="dfPessoas" class="container">
+
+          <div class="box-label">
+
+            <label class="label-tabela">Sua Anotação</label>
+            <!-- <label class="label-tabela">Causa</label>
+            <label class="label-tabela">Medicamento</label>
+            <label class="label-tabela">Sintomas</label> -->
+
+          </div>
+
+          <div class="box-input">
+            <input type="text" name="txtConsulta" class="input-tabela">
+            <!-- <input type="datetime" name="txtMedico" class="input-tabela">
+            <input type="text" name="txtClinica" class="input-tabela"> -->
+
+          </div>
+        
+        </div>
+
+        <input class="button-event" type="button" value="Salvar" 
+        onclick="cadPessoa(txtData.value, txtConsulta.value, txtMedico.value, txtClinica.value)"> 
+        
+        <br> <br>
+
+      </form>
+
+
+    </div>
+
+<!-- <br> <br> -->
+
+    <!-- <div id="dtPessoas">
+
+      <table id="tbPessoas">
+          <thead>
+              <tr>
+
+                  <td>codigo</td>
+                  <td>Data</td>
+                  <td>Consulta</td>
+                  <td>Médico</td>
+                  <td>Clínica</td>
+                  <td>Ação</td>
+              
+                </tr>
+          </thead>
+      </table>
+    </div> -->
+
+
+
+
+  <script>
+    // Carregando os arquivos HTML
+    loadHTML('header-container', '../../Otimizar/NavigationTop.html');
+    loadHTML('content-container', '../../Otimizar/NavigationLeft.html');
+    // loadHTML('footer-container', 'footer.html');
+  </script>
+
+</body>
+</html>

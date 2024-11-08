@@ -12,12 +12,18 @@
   }
 
   .label-tabela{
-    margin-top: 5px;
+    /* margin-top: 5px; */
+    margin-top: -5%;
+    /* background-color: red; */
   }
 
   .input-tabela{
+    margin-left: -100%;
     margin-top: 10px;
-    /* text-align: top; */
+    width: 150%;
+    height: 60vh;
+    text-wrap:wrap;
+    /* text-align:initial; */
   }
 
 
