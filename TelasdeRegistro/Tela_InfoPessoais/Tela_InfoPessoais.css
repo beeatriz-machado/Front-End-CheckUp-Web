@@ -1,3 +1,5 @@
+@import url(../../token/styles/MainPrincipal.css);
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,32 +16,12 @@ body {
     min-height: 100vh;
 }
 
-.navbar {
-    width: 100%;
-    padding: 10px 20px;
-    background: linear-gradient(90deg, #2d9df9, #0094FF);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar h1 {
-    font-size: 28px;
-}
-
-.navbar nav a {
-    color: white;
-    margin-left: 15px;
-    text-decoration: none;
-    font-weight: 500;
-}
 
 .profile-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 210px;
+    padding: 100px;
     width: 100%;
 }
 
@@ -49,11 +31,11 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 110px;
-    max-width: 80%;
-    width: 100%;
+    width: 75%;
     gap: 30px;
     justify-content: center;
-    margin-top: 20px;
+    height: 50vh;
+    margin-top: 10vh;
 }
 
 .section {

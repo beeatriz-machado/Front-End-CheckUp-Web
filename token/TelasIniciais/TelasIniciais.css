@@ -1,6 +1,5 @@
-@import url('cores.css');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-@import url('../../token/styles/botoes.css');
+@import url(main.css);
+
 * {
     box-sizing: border-box;
 }
