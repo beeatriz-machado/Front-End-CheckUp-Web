@@ -1,2 +1,40 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 @import url(../../token/TelasIniciais/TelasIniciais.css);
+
+
+
+.input-box{
+    margin-bottom: 5%;
+    position: relative;
+    
+}
+
+.input-box input{
+    width: 300px;
+    padding: 3% 7%;
+    border-radius: 20px;
+    border: 2px solid #2d9df9;
+    outline: none;
+    font-size: 20;
+    text-align: left;
+ 
+}
+.input-box i{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2d9df9;
+
+}
+
+
+.input{
+    width: 100%;
+    padding: 3% 7%;
+    border-radius: 20px;
+    border: 2px solid #2d9df9;
+    outline: none;
+    font-size: 20;
+    background-color: white;
+}

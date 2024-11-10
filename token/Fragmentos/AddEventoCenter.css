@@ -12,13 +12,13 @@
   
   }
   .event{
-    margin-top: 5vh;
+    /* margin-top: 1vh; */
     width: 150vh;
     height: 70vh;
     padding: 3%;
     border-radius: 2vh;
     border: 2px ; 
-    color: #fff;
+    color: #000;
     font-size: 20;
     margin-bottom: 3%;   
     background: white;
@@ -37,4 +37,5 @@
     margin-top: 35vh;
   
   }
+  
   

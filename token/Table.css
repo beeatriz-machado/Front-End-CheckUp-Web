@@ -19,8 +19,8 @@
   /*Box que armazena Labels e Inputs da tabela  */
   .container {
       display: flex;
-      margin-top: 25vh;
-      margin-left: -5vh;
+      margin-top: -80vh;
+      margin-left: 50vh;
       /* background-color: purple; */
   }
   
