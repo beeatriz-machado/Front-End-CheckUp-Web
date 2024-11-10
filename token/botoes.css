@@ -43,6 +43,9 @@
     font-weight: bold;
     font-size: 18px;
     margin-top: 30vh;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    
 
 }
 
@@ -60,8 +63,13 @@
     color: rgba(255, 255, 255, 0.5);
     background: transparent;
     padding: 0 8px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    
   }
   .navbar-menu > button:hover{
+    opacity: 0.9;
+    transform: scale(1.05);
     font-weight: bold;
     color: #fff;
     font-size: 14px;
@@ -85,12 +93,15 @@
     padding: 8%;
     text-align: left;
     padding-left: 40px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
     
     
 }
 
 
 .button-navbar:hover{
+    background-color: var(--offwhite);
     opacity: 0.9;
     transform: scale(1.05);
     border-left: 10px solid var(--azul); 
@@ -127,12 +138,15 @@
     border-radius: 10px;
     border: 2px solid #fff; 
     font-size: 15px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    
 }
 
 
 .button-yesno:hover{
     opacity: 0.9;
-    /* transform: scale(1.05); */
+    transform: scale(1.05);
     background-color: var(--azul);
 
     /* background-color: var(--azul); */

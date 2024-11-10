@@ -10,14 +10,15 @@
     <link href="AdicionarEvento.css" rel="stylesheet" />
     <script src="../Otimizar/CarregaConteudoHtml.js"></script>
     <script src="../../Otimizar/CarregaConteudoHtml.js"></script>
-
+    <!-- <link rel="stylesheet" href="../MarcarConsulta/MarcarConsulta.html"> -->
+    <!-- <link rel="stylesheet" href="../../Otimizar/AddEventoLeft.html"> -->
   </head>
   <body>
 
       <!-- --------- Divs para armazenar Navigations --------- -->
       <div id="header-container"></div>
       <div id="content-container"></div>
-      <!-- <div id="footer-container"></div> -->
+      <div id="footer-container"></div>
   
       <!-- --------- Divs para armazenar Navigations --------- -->
 
@@ -25,23 +26,7 @@
       <!-- CONFIGURAÇÕES DE INFORMAÇÕES DA TELA PRINCIPAL -->    
       <div class="principal"> <!-- DIV PRINCIPAL - SUPORTA TODA PARTE DE INFORMAÇÕES DA TELA -->
 
-        <div class="master-left">   
-          <div class="box-left"> <!-- DIV BOX-LEFT - SUPORTA INFORMAÇÕES DA BARRA LATERAL: CALENDARIO E PRÓXIMO EVENTO -->
 
-            <div class="calendar"> add calendario </div> <!-- DIV CALENDAR - SUPORTA O CALENDARIO (PARTE SUPERIOR DA DIV) -->
-            
-            <div class="info-next"><!-- DIV INFO-NEXT - SUPORTA AS INFORMAÇÕES DE PRÓXIMA CONSULTA (PARTE INFERIOR DA DIV) -->
-              
-              <hr>
-              <h4>Próximo evento</h4>
-                <div class="info-consulta">
-                  <p>adicionar logica com js para informar qual será a proxima consulta</p>
-                
-                </div>
-            </div>
-
-          </div>
-      </div>
 
 
         <div class="box-center">  <!-- DIV BOX-CENTER - SUPORTA PARTE CENTRAL DA DIV  -->
@@ -51,7 +36,7 @@
             <div class="img">
               
               <img class="img" src="../logo/blue.png" alt=""> </div>
-              <button class="button-event">+ Adicionar evento</button>
+              <button class="button-event" onclick='alterarPagina("../MarcarConsulta/MarcarConsulta.html")'>+ Adicionar evento</button>
               <!-- Adicionar lógica de Onclick para direcionar para tela de consultas
                Criar telas de consultas
                Testar onclick com tela de pressão ou glicose -->
@@ -68,7 +53,7 @@
     // Carregando os arquivos HTML
     loadHTML('header-container', '../../Otimizar/NavigationTop.html');
 
-    // loadHTML('footer-container', 'footer.html');
+    loadHTML('footer-container', '../../Otimizar/AddEventoLeft.html');
   </script>
 
 </body>
