@@ -12,63 +12,65 @@
     
 </body>
 
-        <!-- --------- Divs para armazenar Navigations --------- -->
-        <div id="header-container"></div>
-        <!-- <div id="footer-container"></div> -->
-    
-        <!-- --------- Divs para armazenar Navigations --------- -->
+    <!-- --------- Divs para armazenar Navigations --------- -->
+    <div id="header-container"></div>
+    <!-- <div id="footer-container"></div> -->
+
+    <!-- --------- Divs para armazenar Navigations --------- -->
 
     <div class="first-column">
-	<div class="form-container login">
-    
-    <h2>Bem vindo(a)</h1>
+      <div class="form-container login">
+        
+        <h2>Bem vindo(a)</h1>
 
-		<form action="#">
-      <div class="container-input"> 
-      <div class="input-box">
-        <i class="fas fa-account"></i>
-        <input class="input" type="email" placeholder="Nome">
+        <form action="#">
+
+          <div class="container-input"> 
+            <div class="input-box">
+              <i class="fas fa-account"></i>
+              <input class="input" type="email" placeholder="Nome">
+            </div>
+
+            <div class="input-box">
+              <i class="fa fa-envelope"></i>
+              <input class="input" type="email" placeholder="E-mail">
+            </div>
+
+            <div class="input-box">
+              <i class="fas fa-calendar"></i>
+              <input class="input" type="date">
+            </div>
+
+
+            <div class="input-box">
+              <i class="fas fa-lock"></i>
+              <input class="input" type="password" placeholder="Senha">
+            </div>
+
+          </div>
+
+          <button class="button">Cadastrar</button>
+          <span>Ja tem uma Conta? <a href="#">Entrar</a> </span>
+                
+        </form>
+
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1><img src="../../scr/logo/white.png" alt=""></h1>
+          </div>
+        </div>
+      </div>
     </div>
 
-      <div class="input-box">
-        <i class="fa fa-envelope"></i>
-        <input class="input" type="email" placeholder="E-mail">
-    </div>
-    
-    <div class="input-box">
-      <i class="fas fa-calendar"></i>
-      <input class="input" type="date">
-  </div>
-
-  
-  <div class="input-box">
-    <i class="fas fa-lock"></i>
-    <input class="input" type="password" placeholder="Senha">
-</div>
-
-</div>
-
-            <button class="button">Cadastrar</button>
-            <span>Ja tem uma Conta? <a href="#">Entrar</a> </span>
-            
-		</form>
-	</div>
-	<div class="overlay-container">
-		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-			</div>
-			<div class="overlay-panel overlay-right">
-				<h1><img src="../../scr/logo/white.png" alt=""></h1>
-			</div>
-		</div>
-	</div>
-</div>
-
-<script>
-  // Carregando os arquivos HTML
-  loadHTML('header-container', "../../scr/Otimizar/links.html");
-  // loadHTML('footer-container', 'footer.html');
-</script>
+    <script>
+      // Carregando os arquivos HTML
+      loadHTML('header-container', "../../scr/Otimizar/links.html");
+      // loadHTML('footer-container', 'footer.html');
+    </script>
 
 </body>
 </html>

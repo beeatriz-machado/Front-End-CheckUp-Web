@@ -6,7 +6,7 @@
 /* ---------------------- Botão de cadastro e entrar  ----------------------  */
 
 .button{
-    width: 100%;
+    width: 60%;
     padding: 3%;
     border-radius: 20px;
     border: 2px solid #fff; 
@@ -17,6 +17,7 @@
     background: linear-gradient(90deg, #2856f9, #00d9ff);
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     transition: background-color 0.3s ease, transform 0.3s ease;
+
 }
 
 .button:hover {
