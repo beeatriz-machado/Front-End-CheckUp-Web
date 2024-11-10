@@ -1,2 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800'); */
 @import url(../../token/TelasIniciais/TelasIniciais.css);
+
+body{
+    background-color: var(--offWhite);
+}
+
+.form-container h2{
+    margin-top: 100px;
+    background-color: white;
+}
+
+.container-input{
+    margin-top: -20%;
+}

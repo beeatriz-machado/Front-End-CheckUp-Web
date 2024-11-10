@@ -2,5 +2,20 @@
 @import url(../../token/TelasIniciais/TelasIniciais.css);
 
 .button{
-    margin-top: 200px;
+    margin-top: 100px;
+}
+
+.input-box{
+    margin-top: 10px;
+}
+
+.confirm{
+    margin-top: 100px;
+}
+
+.form-container p{
+    /* background-color: red; */
+    /* padding-top: 50px; */
+    color: var(--cinza-font);
+    font-size: 12px;
 }
