@@ -1,4 +1,9 @@
 @import url('../../token/Padroes/mainRegistros.css');
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url(../../token/TelasIniciais/TelasIniciais.css);
+
+
 * {
     box-sizing: border-box;
 }
@@ -26,24 +31,26 @@ span {
     margin: 3px 0;
 }
 
+h2{
+    margin-bottom: 50px;
+}
+
 a {
-    color: #cfcfcf;
-    font-size: 15px;
+    color: var(--cinza-font);
+    font-size: 14px;
     text-decoration: none;
-    margin: 15px 0;
+    /* margin: 15px 0; */
+
 }
 
-.button {
-    width: 25%;
-    font-weight: bold;
-}
-
-.input {
-    width: 60%;
+span{
+    margin-top: -12px;
+    font-size: 12px;
+    color: var(--cinza-font);
 }
 
 form {
-    background-color: #FFFFFF;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;

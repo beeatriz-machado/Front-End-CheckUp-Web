@@ -1,9 +1,4 @@
 
-
-
-
-
-
 function cadPessoa(data, consulta, medico, clinica){
 
     var tb = document.getElementById("tbPessoas");  // encontra a tabela tbPessoas

@@ -19,16 +19,36 @@
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <link href="NovaSenha.css" rel="stylesheet" />
+    <script src="../../scr/Otimizar/Adicionarpagina.js"></script>
+
+
+
 
 </body>
     <div class="first-column">
 	<div class="form-container login">
 		<form action="#">
-            <span>Nova senha</span>
-			<input type="email" placeholder="Nova Senha" />
-      <input type="password" placeholder="Confirmar Senha" />
-            <button class="button">Confirmar</button>
+            <h3>Nova senha</h3>
+
+            <div class="container-input"> 
+            <div class="input-box">
+              <i class="fas fa-lock"></i>
+              <input class="input" type="password" placeholder="Nova senha">
+          </div>
+
+          <div class="input-box">
+            <i class="fas fa-lock"></i>
+            <input class="input" type="password" placeholder="Confirmar nova senha">
+        </div>
+      </div>
+
+
+            <button class="button" type="button" onclick="alterarPagina('../login1/index.html')" >Confirmar</button>
+
+
 		</form>
+
+
 	</div>
 	<div class="overlay-container">
 		<div class="overlay">
@@ -40,3 +60,9 @@
 		</div>
 	</div>
 </div>
+
+
+
+
+</body>
+</html>

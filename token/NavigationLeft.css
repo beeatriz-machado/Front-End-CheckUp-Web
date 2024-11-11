@@ -1,10 +1,11 @@
 
 /* Box para armazenar Navigation Lateral */
 .box-navleft{
-    margin-top: 25%;
+    /* margin-top: 50px; */
     background-color: white;
-    width: 25vh;
+    width: 35vh;
     height: 100vh;
+    margin-left: -10px;
   }
 
 
@@ -22,7 +23,15 @@
 
     text-align: center;
     color: var(--cinza-font);
-    margin-top: 30px;
+    margin-top: 60px;
+    
   
   }
+
+.navbar-left hr{
+  width: 100%;
+  height: 2px;
+  margin-top: -10px;
+  background-color: var(--cinza);
+}
   

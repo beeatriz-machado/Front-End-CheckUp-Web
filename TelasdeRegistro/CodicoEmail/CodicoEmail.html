@@ -5,28 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>principal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-    <link href="CodicoEmail.css" rel="stylesheet" />
+  
+    <link href="CodicoEmail.css" rel="stylesheet" />    
+    <script src="../../scr/Otimizar/Adicionarpagina.js"></script>
+    <script src="../../scr/Otimizar/CarregaConteudoHtml.js"></script>
 
+    <!-- <link rel="stylesheet" href="../NovaSenha/NovaSenha.html"> -->
 </body>
+
+    <!-- --------- Divs para armazenar Navigations --------- -->
+    <div id="header-container"></div>
+    <!-- <div id="footer-container"></div> -->
+
+    <!-- --------- Divs para armazenar Navigations --------- -->
+
+
     <div class="first-column">
 	<div class="form-container login">
 		<form action="#">
-            <span>Codico do Email</span>
-			<input type="email" placeholder="Digite o codico" />
-            <button class="button">Confirmar</button>
+            <h3>Código do Email</h3>
+
+      <div class="input-box">
+        <i class=""></i>
+        <input class="input" type="email" placeholder="Digite o  código">
+    </div>
+    <p>Por favor, informe o código que foi enviado
+      <br>ao seu e-mail para redefinição de senha.</p>
+
+
+            <button class="button" type="button" onclick="alterarPagina('../NovaSenha/NovaSenha.html')">Confirmar</button>
+
 		</form>
 	</div>
 	<div class="overlay-container">
@@ -39,3 +48,10 @@
 		</div>
 	</div>
 </div>
+
+
+    <script>
+      // Carregando os arquivos HTML
+      loadHTML('header-container', "../../scr/Otimizar/links.html");
+      // loadHTML('footer-container', 'footer.html');
+    </script>

@@ -3,8 +3,9 @@
 
 /* ---------------------- Input de email e senha  ----------------------  */
 .input{
-    width: 100%;
-    padding: 3% 7%;
+    height: 40px;
+    width: 350px;
+    /* padding-top: 1px; */
     border-radius: 20px;
     border: 2px solid var(--azul);
     outline: none;
@@ -13,10 +14,22 @@
 .input-box i{
     position: absolute;
     left: 10px;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
     color: var(--azul);
+    padding-left: 5px;
 }
+
+.input-box input{
+    margin-top: 15px;
+    padding-left: 40px;
+}
+.input-box{
+
+    /* padding-top:0px; */
+    margin-top: -20px;
+}
+
 /* ---------------------- Input de email e senha  ----------------------  */
 
 

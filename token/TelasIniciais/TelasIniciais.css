@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #f6f5f7;
+    background: var(offWhite);
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -28,19 +28,18 @@ span {
 }
 
 a {
-    color: #cfcfcf;
+    color: var(--azul);
     font-size: 15px;
     text-decoration: none;
     margin: 15px 0;
 }
 
 .button {
-    width: 25%;
-    font-weight: bold;
+    width: 45%;
 }
 
 form {
-    background-color: #FFFFFF;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,6 +65,7 @@ input {
     position: absolute;
     top: 0;
     height: 90%;
+
 }
 
 .login {
