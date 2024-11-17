@@ -1,0 +1,87 @@
+@import url('../token/cores.css');
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: "Poppins";
+  }
+  .dias{
+    /* display: 1; */
+    /* grid-template-rows: repeat(1, 1fr); */
+    /* gap: 10px; */
+    padding-left: 10px;
+    margin-top: -20px;
+    
+
+  }
+
+  .dias span{
+    margin-right: 30px;
+  }
+  .calendar {
+    background-color: white;
+    border-radius:15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* padding: 1px; */
+    padding-left: 4px;
+    padding-top: 30px;
+    width: 280px;
+    height: 280px;
+    /* display: flex; */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: -10px;
+  }
+  
+  #month-year {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5px;
+    margin-top: -3px;
+  }
+  
+  .day {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .day:hover {
+    background-color: #eaeaea;
+  }
+  
+  .day.inactive {
+    color: #ccc;
+    cursor: default;
+  }
+  
+  .day.today {
+    background-color: var(--azul-bebe) ;
+    border: 2px;
+    border-radius: 50%;
+    color: #000;
+    font-weight: bold;
+  }
+  
