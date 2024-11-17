@@ -10,18 +10,17 @@
   
   .box-left{
     background-color: #fff;
-    width: 100%;
-    height: 100%;
-    margin-top: 12px;
+
+    /* margin-top: 3%; */
   
-    flex: 0 0 20%;             /* Ocupa 20% da largura */
+    /* flex: 0 0 20%;             Ocupa 20% da largura */
     /* padding: 20px; */
     /* background-color: #2d9df9; */
     /* color: white; */
     text-align: center;
     /* border-right: 3px solid var(--cinza);
     border-right-color: var(cinza); */
-    width: 17%;
+    width: 25%;
     height: 100vh;
     border-right: 3px solid var(--cinza);
     /* background-color: red; */
@@ -34,7 +33,8 @@
   .calendar{
     /* background-color: #fff; */
     height: 35%;
-    color: #000000;
+    margin-top: 25%;
+    /* color: pink; */
   
   }
   

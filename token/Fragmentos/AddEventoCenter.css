@@ -2,9 +2,11 @@
 .box-center{
     /* background-color: aqua; */
   
-    flex: 0 0 78%;
-    margin-top: 12vh;             
-    padding: 20px;
+    /* flex: 0 0 78%; */
+    /* margin-top: 1vh;              */
+    /* padding: 20px; */
+    margin-top: -20px;
+    padding-left: 5%;
     /* background-color: #f39c12; */
     color: white;
     text-align: center;
@@ -15,13 +17,14 @@
     /* margin-top: 1vh; */
     width: 150vh;
     height: 70vh;
-    padding: 3%;
+    /* padding: 3%; */
     border-radius: 2vh;
     border: 2px ; 
     color: #000;
     font-size: 20;
-    margin-bottom: 3%;   
-    background: white;
+    margin-top: -70px;
+    margin-left: 20px;
+    background: #fff;
   }
   
   .img{

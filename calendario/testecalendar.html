@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../token/Fragmentos/AddEventoLeft.css">
+    <link rel="stylesheet" href="calendar.css"> <!-- Adicionando o arquivo CSS do calendário -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+</head>
+<body>
+    <div class="box-left">
+        <!-- DIV BOX-LEFT - SUPORTA INFORMAÇÕES DA BARRA LATERAL: CALENDARIO E PRÓXIMO EVENTO -->
+
+        <div class="calendar">
+            <div class="header">
+                <button id="prev">
+                    <span class="material-symbols-outlined">arrow_back_ios</span>
+                </button>
+                <div id="month-year"></div>
+                <button id="next">
+                    <span class="material-symbols-outlined">arrow_forward_ios</span>
+                </button>
+            </div>
+            <div class="dias">
+                <span>D</span><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span>
+            </div>
+            <div class="days" id="days"></div>
+        </div> <!-- Fim do calendário -->
+        
+        <hr>
+        <div class="info-next">
+            <!-- DIV INFO-NEXT - SUPORTA AS INFORMAÇÕES DE PRÓXIMA CONSULTA (PARTE INFERIOR DA DIV) -->
+            <h4>Próximo evento</h4>
+            <div class="info-consulta">
+                <p>adicionar logica com js para informar qual será a proxima consulta</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="calendar.js"></script> <!-- Adicionando o script JavaScript do calendário -->
+</body>
+</html>

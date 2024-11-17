@@ -1,4 +1,5 @@
 @import url('../../../token/styles/MainAddEvent.css');
+/* @import url('../../../token/Fragmentos/AddEventoCenter.css'); */
 /* @import url('../../../token/cores.css'); */
 
 
@@ -22,4 +23,57 @@
   /* background-color: aqua; */
   margin-left: 20%;
   margin-top: -43%;
+}
+
+
+
+.box-calendar{
+  margin-top: -70px;
+  margin-left: 1px;
+}
+
+
+.box-center{
+  /* background-color: aqua; */
+
+  /* flex: 0 0 78%; */
+  /* margin-top: 1vh;              */
+  /* padding: 20px; */
+  margin-top: 10px;
+  margin-left: -20px;
+  width: 150vh;
+  /* margin-bottom: -100px; */
+  /* padding-left: 3%; */
+  /* background-color: #f39c12; */
+  color: white;
+  text-align: center;
+   
+
+}
+.event{
+  /* margin-top: 1vh; */
+  width: 100%;
+  height: 70vh;
+  /* padding: 3%; */
+  border-radius: 2vh;
+  border: 2px ; 
+  color: #000;
+  font-size: 20;
+  /* margin-top: -70px; */
+  margin-left: -20px;
+  background: #fff;
+}
+
+.img{
+  
+  display: block;        /* Faz a imagem ocupar a largura total do contêiner */
+  margin: 10vh auto;        /* Centraliza horizontalmente */
+  width: 15vh;
+  height: auto;
+
+}
+
+.button-event{
+  margin-top: 35vh;
+
 }

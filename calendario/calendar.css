@@ -1,11 +1,11 @@
-@import url('../token/cores.css');
+@import url('../token/');
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     align-items: center;
     height: 100vh;
-    margin: 0;
+    /* margin: 0; */
+    margin-top: 90px;
     background-color: #f4f4f4;
     font-family: "Poppins";
   }
@@ -50,7 +50,6 @@ body {
   button {
     border: none;
     background-color: transparent;
-    font-size: 1.5em;
     cursor: pointer;
   }
   
@@ -78,7 +77,7 @@ body {
   }
   
   .day.today {
-    background-color: var(--azul-bebe) ;
+    background-color: #86cfff ;
     border: 2px;
     border-radius: 50%;
     color: #000;
