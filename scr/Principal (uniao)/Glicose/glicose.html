@@ -9,8 +9,10 @@
     <!-- Importação de arquivos -->
     <script src="glicose.js"></script>
     <link rel="stylesheet" href="glicose.css">
+    <link rel="stylesheet" href="PopupGlicose/PopUpGlicose.css">
     <script src="../../Otimizar/CarregaConteudoHtml.js"></script>
     <script src="../../Otimizar/Adicionarpagina.js"></script>
+    <script src="PopupGlicose/PopUpGlicose.js"> </script>
 
 </head>
 
@@ -22,6 +24,7 @@
     <!-- <div id="footer-container"></div> -->
 
     <!-- --------- Divs para armazenar Navigations --------- -->
+
 
     
 
@@ -38,6 +41,8 @@
             <label class="label-tabela">Jejum</label>
 
           </div>
+          
+   
 
           <div class="box-input">
 
@@ -55,16 +60,40 @@
           </div>
         
         </div>
-
+        
+        <div class="buttons"> 
         <input class="button-event" type="button" value="Salvar" 
         onclick="cadPessoa(txtData.value, txtConsulta.value, txtMedico.value, txtClinica.value)"> 
-        
-        <br> <br>
+
+          <button class="open-button" type="button" onclick="abrirPopup()">?</button>
+        </div>        
+
 
       </form>
 
 
     </div>
+
+    <div id="popup" class="popup-overlay">
+      <div class="popup-content">
+          <button class="close-btn" onclick="fecharPopup()">X</button>
+          <h2>Qual é o nível normal de <br> glicemia?</h2>
+          <h3>Glicemia em jejum:</h3>
+          <p>
+              100 a 125 mg/dL = Intolerância à Glicose <br>
+              Acima de 126 mg/dL = Diabetes
+          </p>
+                          
+          <h3>Glicemia pós-prandial (120 min):</h3>
+          <p>
+              140 a 199 mg/dL = Intolerância à glicose <br>
+              Acima de 200 mg/dL = Diabetes
+          </p>
+  
+          <!-- <button class="confirm-btn" onclick="fecharPopup()">Confirmar</button> -->
+          
+      </div>
+  </div>
 
 <!-- <br> <br> -->
 

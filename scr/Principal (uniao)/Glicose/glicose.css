@@ -13,4 +13,18 @@
 
 
 
+.buttons{
+  /* background-color: pink; */
+  /* margin-left: 500px; */
+  height: 60px;
+margin-top: 100px;
+}
+
+
+.open-button{
+  /* margin-top: 10px; */
+  margin-left: 400px;
+  /* flex: 1; */
+
+}
 

@@ -43,7 +43,7 @@
     color: white;
     font-weight: bold;
     font-size: 18px;
-    margin-top: 30vh;
+    /* margin-top: 30vh; */
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     transition: background-color 0.3s ease, transform 0.3s ease;
     
@@ -225,6 +225,8 @@
     background-color: var(--azul);
     color: white;
     border: 0px;
+    height: 30px;
+    width: 30px;
     font-weight: bold;
 }
 /* ---------------------- Botão de Abrir PopUp ----------------------  */
