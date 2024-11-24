@@ -2,10 +2,14 @@
 /* @import url('../../../token/Fragmentos/AddEventoCenter.css'); */
 /* @import url('../../../token/cores.css'); */
 
+body{
+  background: #f4f7ff;
+}
 
 .principal{    
   display: flex;       /* Alinha os elementos filhos em linha */
   gap: 20px;
+  
   /* background-color: red; */
 
 }

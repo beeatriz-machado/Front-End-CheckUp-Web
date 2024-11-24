@@ -10,23 +10,82 @@
 
     <!-- Importação de arquivos -->
     <script src="glicose.js"></script>
+    <link rel="stylesheet" href="../../../calendario/calendar.css">  
     <link rel="stylesheet" href="MarcarConsulta.css">
     <script src="../../Otimizar/CarregaConteudoHtml.js"></script>
     <!-- <link rel="stylesheet" href="../../Otimizar/NavigationLeft.html"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+  
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+  
 
 </head>
 
 <body>
 
     <!-- --------- Divs para armazenar Navigations --------- -->
-    <div id="header-container"></div>
-    <div id="content-container"></div>
+    <!-- <div id="header-container"></div> -->
+    <!-- <div id="content-container"></div> -->
     <!-- <div id="footer-container"></div> -->
 
     <!-- --------- Divs para armazenar Navigations --------- -->
 
-    
+    <div class="principal"> <!-- DIV PRINCIPAL - SUPORTA TODA PARTE DE INFORMAÇÕES DA TELA -->
+      <div class="box-navtop"> 
+        <nav class="navbar">
+          <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+  
+          <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+            <span class="material-icons">menu</span>
+          </button>
+  
+          <h1 class="navbar-title">CheckUp+</h1>
+  
+          <nav class="navbar-menu">
+            <button type="button" class="active">Principal</button>
+            <button type="button" >Registrar</button>
+            <button type="button">Arquivos</button>
+            <button type="button">Perfil</button>
+            
+          </nav>
+        
+        </nav> 
+      
+      </div>  <!-- box-navtop -->
 
+
+    <div class="box-calendar">    
+      <div class="calendar">
+        <div class="header">
+       
+            <button id="prev">
+              <span class="material-symbols-outlined">
+                arrow_back_ios
+                </span>
+    
+              
+            </button>
+             <!-- Ícone de café -->
+    
+     
+          <div id="month-year"></div>
+    
+          <button id="next">
+            <span class="material-symbols-outlined">arrow_forward_ios</span>
+    
+            
+          </button>
+    
+        </div>
+        <div class="dias">
+          <span>D</span><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span>
+        </div>
+        <div class="days" id="days"></div>
+      </div>
+    
+     </div>
+    
+     <div class="box-center">
     <div class="box-table">
 
       <form name="fPessoas">
@@ -61,7 +120,8 @@
 
 
     </div>
-
+  </div>
+</div>
 <!-- <br> <br> -->
 
     <!-- <div id="dtPessoas">
@@ -85,10 +145,10 @@
 
 
 
-  <script>
+  <script src="../../../calendario/calendar.js">
     // Carregando os arquivos HTML
     loadHTML('header-container', '../../Otimizar/NavigationTop.html');
-    loadHTML('content-container', '../../Otimizar/AddEventoLeft.html');
+    // loadHTML('content-container', '../../Otimizar/AddEventoLeft.html');
     // loadHTML('footer-container', 'footer.html');
     
   </script>

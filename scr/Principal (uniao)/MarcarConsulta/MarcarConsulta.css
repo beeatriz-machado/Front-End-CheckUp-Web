@@ -1,26 +1,99 @@
-@import url(../../../../token/styles/MainPrincipal.css);
-@import url(../../../../token/Table.css);
-@import url(../../../token/Fragmentos/AddEventoLeft.css);
-
+/* @import url(../../../../token/styles/MainPrincipal.css); */
+/* @import url(../../../../token/Table.css); */
+/* @import url(../../../token/Fragmentos/AddEventoLeft.css); */
+@import url('../../../token/styles/MainAddEvent.css');
+@import url(../../../token/inputs.css);
 
 * {
     box-sizing: border-box;
-  }
+}
   
-  body {
-    background: #f4f7ff;
-    font-family: "Poppins";
-  }
+body {
+  /* background: #f4f7ff; */
+  font-family: "Poppins";
+}
 
-  .label-tabela{
+
+.principal{    
+  display: flex;       /* Alinha os elementos filhos em linha */
+  gap: 20px;
+  /* background-color: red; */
+
+}
+
+
+.box-center{
+  /* background-color: aqua; */
+
+  margin-top: 10px;
+  margin-left: 30px;
+  width: 150vh;
+
+  color:#000;
+  text-align: center;
+  height: 450px;
+ 
+}
+
+
+.box-input{
+  width: 500px;
+  margin-top: -150px;
+  margin-left: 200px;
+  /* background-color: pink; */
+  color: #000;
+  flex: 1;
+  /* background-color: blueviolet; */
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.box-label{
+  text-align: left;
+  width: 100px;
+  margin-top: 50px;
+  /* margin-left: -100px; */
+  /* background-color: blueviolet; */
+
+
+}
+
+
+.label-tabela{
+    margin-top: 5px;
+    padding-bottom: 50px;
+    display: block; /* Display labels as block elements for better formatting */
+    padding: 5px;
+    margin-top: -10px;
     margin-top: 5px;
   }
 
-  .input-tabela{
-    margin-top: 10px;
-    /* text-align: top; */
-  }
 
 
+.input-tabela{
+  margin-top: 10px;
+  /* text-align: top; */
+}
+
+.box-calendar{
+  margin-top: -65px;
+  /* margin-left: 1px; */
+  /* background-color: red; */
+  height: 850px;
+}
 
 
+.event{
+  /* margin-top: 1vh; */
+  width: 100%;
+  height: 70vh;
+  /* padding: 3%; */
+  border-radius: 2vh;
+  border: 2px ; 
+  color: #000;
+  font-size: 20;
+  /* margin-top: -70px; */
+  margin-left: -20px;
+  background: #fff;
+}
