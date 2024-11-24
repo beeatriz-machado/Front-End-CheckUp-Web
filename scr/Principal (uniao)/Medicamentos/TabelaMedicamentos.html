@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CheckUp+ - Tabela de Consultas</title>
+  <title>CheckUp+</title>
   
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,9 +12,20 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
 
-  <link rel="stylesheet" href="TabelaVisual1.css">
+  <link rel="stylesheet" href="../../../token/Fragmentos/TabelaVisual.css">
+  <script src="../../Otimizar/CarregaConteudoHtml.js"></script>
+  <link rel="stylesheet" href="../../../token/NavigationLeft.css">
+  <link rel="stylesheet" href="../../../token/NavigationTop.css">
 </head>
 <body>
+    <!-- --------- Divs para armazenar Navigations --------- -->
+    <div id="header-container"></div>
+
+    <div id="content-container"></div>
+    <!-- <div id="footer-container"></div> -->
+
+    <!-- --------- Divs para armazenar Navigations --------- -->
+    
   <div class="background-box">
     <div class="container">
       <table class="consulta-tabela">
@@ -41,9 +52,17 @@
         </tbody>
       </table>
       <div class="box-add"> 
-      <button class="button-event">Adicionar</button>
+      <button class="button-event" onclick="window.location.href='medicamento.html'">Adicionar</button>
     </div>
     </div>
   </div>
+
+  <script>
+    // Carregando os arquivos HTML
+    loadHTML('header-container', '../../Otimizar/NavigationTop.html');
+    loadHTML('content-container', '../../Otimizar/NavigationLeft.html');
+    // loadHTML('footer-container', 'footer.html');
+  </script>
+
 </body>
 </html>

@@ -1,7 +1,7 @@
-@import url(../../../token/cores.css);
-@import url(../../../token/botoes.css);
+@import url(../cores.css);
+@import url(../botoes.css);
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,9 +15,12 @@
     align-items: center;
     height: 100vh;
   }
-  
+   */
   /* Estilo para a "box" de fundo */
   .background-box {
+    margin-left: 300px;
+    margin-top: -500px;
+    
     background-color: white;
     /* padding:100px; */
     border-radius: 20px;
