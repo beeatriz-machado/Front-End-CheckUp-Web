@@ -59,16 +59,17 @@
 
 
 /* ---------------------- Botão do NavBar Topo  ----------------------  */
-.navbar-menu > button {
+.navbar-menu > a {
     /* margin-top: 20px; */
     color: rgba(255, 255, 255, 0.5);
     background: transparent;
     padding: 0 8px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
     
   }
-  .navbar-menu > button:hover{
+  .navbar-menu > a:hover{
     opacity: 0.9;
     transform: scale(1.05);
     font-weight: bold;
@@ -201,7 +202,7 @@
     color: #fff;
     font-size: 20;
     cursor: pointer;
-    margin-bottom: 3%;   
+    /* margin-bottom: 3%;    */
     background: linear-gradient(90deg, #2856f9, #00d9ff);
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     transition: background-color 0.3s ease, transform 0.3s ease;

@@ -1,4 +1,6 @@
 @import url(../../token/styles/MainPrincipal.css);
+@import url(../../../token/NavigationTop.css);
+@import url(../../../token/botoes.css);
 
 * {
     box-sizing: border-box;

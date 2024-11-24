@@ -1,0 +1,183 @@
+@import url(../../../token/NavigationTop.css);
+@import url(../../../token/botoes.css);
+*{
+    box-sizing: border-box;
+    font-family: "Poppins";
+    /* background-color: #f4f7ff; */
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.master{
+    width: 14%;
+    margin-top: 5%;
+    margin-left: 2%;
+    /* padding: 20px; */
+    /* background-color: #000; */
+    
+    border-right: 2px solid;
+    border-right-color: #cfcfcf;
+    /* background-color: red; */
+
+
+}
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-top: 5%;
+    margin-left: 2%;
+    /* padding: 20px; */
+    /* background-color: #000; */
+    
+    /* border-right: 2px solid;
+    border-right-color: #cfcfcf; */
+    
+    
+
+    
+}
+
+
+.nav-btn{
+    width: 100%;
+    padding: 3%;
+    height: 70px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 20;
+    cursor: pointer;
+    margin-bottom: 3%;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+
+    
+
+}
+.nav-btn span{
+    /* margin-left: 8px; Espaço entre o texto e o ícone */
+    display: flex;
+    flex-direction: column; /* Alinha em coluna */
+    align-items: flex-end;  /* Alinha todos os itens à direita */
+    background-color: transparent;
+}
+
+.nav-btn:hover .icons span{
+    color: #fff;
+}
+.nav-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.07);
+    background-color: #0e91fd;
+    color: #fff;
+    
+}
+.event{
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
+    margin-top: 5%;
+    /* margin-left: 2%; */
+    /* padding: 20px; */
+    /* background-color: #000; */
+    border-top: 2px solid;
+    border-top-color: #cfcfcf;
+    /* background-color: red; */
+    text-align: center;
+    
+}
+
+.input-box{
+    width: 100%;
+    height: 35px;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: 2px solid #2d9df9;
+    outline: none;
+    font-size: 16px;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Estilo da janela do popup */
+.popup-content {
+    background: #f4f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Botão de fechar */
+.close-btn {
+    margin-left: -5px;
+    width: 100%;
+    padding: 1%;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 20;
+    cursor: pointer;
+    margin-bottom: 1%;   
+    background: rgb(255,81,81);
+    background: linear-gradient(90deg, rgba(255,81,81,1) 0%, rgba(255,66,66,1) 35%, rgba(255,107,99,1) 74%, rgba(255,126,126,1) 100%);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: 40px;
+
+}
+
+
+.close-btn:hover{
+    opacity: 0.9;
+    transform: scale(1.07);
+    background-color: #0e91fd;
+    color: #fff;
+}
+
+.button-container {
+    display: flex;
+    justify-content: left; /* Centraliza os botões na horizontal */
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+
+.confirm-btn{
+    width: 100%;
+    padding: 3%;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 20;
+    cursor: pointer;
+    margin-bottom: 3%;   
+    background: linear-gradient(90deg, #2856f9, #00d9ff);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: 40px;
+}
+
+
+
+.confirm-btn:hover{
+    opacity: 0.9;
+    transform: scale(1.07);
+    background-color: #0e91fd;
+    color: #fff;
+}
