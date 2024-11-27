@@ -1,37 +1,36 @@
 
 /* Box para armazenar Navigation Lateral */
 .box-navleft{
-    /* margin-top: 50px; */
-    background-color: white;
-    width: 35vh;
-    height: 100vh;
-    margin-left: -10px;
-  }
+  /* margin-top: 50px; */
+  background-color: white;
+  width: 35vh;
+  height: 100vh;
+  margin-left: -10px;
+}
 
 
 /* Nav que armazena botoes e texto */
-  .navbar-left{
-    /* background-color: pink; */
-    margin-top: 5vh;
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Espaçamento entre os botões */
-  }
-  
-/* Estiliza o texto superior do Navigation */
-  .navbar-left p{
+.navbar-left{
+  /* background-color: pink; */
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espaçamento entre os botões */
+}
 
-    text-align: center;
-    color: var(--cinza-font);
-    margin-top: 60px;
-    
+/* Estiliza o texto superior do Navigation */
+.navbar-left p{
+
+  text-align: center;
+  color: var(--cinza-font);
+  margin-top: 60px;
   
-  }
+
+}
 
 .navbar-left hr{
-  width: 100%;
-  height: 2px;
-  margin-top: -10px;
-  background-color: var(--cinza);
+width: 100%;
+height: 5px;
+margin-top: -10px;
+/* background-color: var(--cinza); */
 }
-  

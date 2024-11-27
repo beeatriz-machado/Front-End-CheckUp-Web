@@ -1,5 +1,5 @@
-@import url(../../../../token/styles/MainPrincipal.css);
-@import url(../../../../token/Table.css);
+@import url(../../../token/styles/MainPrincipal.css);
+@import url(../../../token/Table.css);
 
 
 * {
@@ -20,6 +20,9 @@
     
   }
 
-
+  .navbar-menu > a {
+    bottom: 20px;
+  
+  }
 
 

@@ -148,6 +148,7 @@ input {
 .overlay-right {
     transform: translateX(-20%);
 }
+
 .img{
 	size: 110%;
 }

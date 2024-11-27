@@ -1,7 +1,7 @@
 @import url('../../../token/styles/MainAddEvent.css');
 /* @import url('../../../token/Fragmentos/AddEventoCenter.css'); */
-/* @import url('../../../token/cores.css'); */
-
+@import url('../../../token/cores.css');
+@import url(../../../token/botoes.css);
 body{
   background: #f4f7ff;
 }
@@ -16,17 +16,21 @@ body{
 
 .navbar-menu > a {
   margin-top: 20px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .button-event{
   /* margin-top: -5000px; */
   margin-bottom: 100vh;
+  background-color: var(--azul);
 }
 
 .box-center{
   /* background-color: aqua; */
   margin-left: 20%;
   margin-top: -43%;
+  font-size: 8px;
 }
 
 
@@ -81,3 +85,8 @@ body{
   margin-top: 35vh;
 
 }
+
+/* .navbar-overlay a{
+  text-decoration: none;
+  color: #fff;
+} */

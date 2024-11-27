@@ -16,6 +16,58 @@
 
      <!-- <link rel="stylesheet" href="../Medicamentos/Medicamento.html"}> -->
 
+
+    <script>
+          // Carregando os arquivos HTML
+    loadHTML('header-container', '../../Otimizar/NavigationTop.html');
+    loadHTML('content-container', '../../Otimizar/NavigationLeft.html');
+    // loadHTML('footer-container', 'footer.html');
+
+    // const cors = require('cors');
+    //   app.use(cors()); // Permite todas as origens
+      // Função para enviar os dados de alergia para a API
+      function cadastrarAlergia() {
+        const NomeAlergia = document.getElementsByName('NomeAlergia')[0].value;
+        const DataDignosticoAlergia = document.getElementsByName('DataDignosticoAlergia')[0].value;
+        const ObservacaoAlergia = document.getElementsByName('ObservacaoAlergia')[0].value;
+  
+        // Validação simples
+        if (!NomeAlergia || !DataDignosticoAlergia || !ObservacaoAlergia) {
+          alert('Por favor, preencha todos os campos!');
+          return;
+        }
+  
+        const dados = {
+          NomeAlergia: NomeAlergia,
+          DataDignosticoAlergia: DataDignosticoAlergia,
+          ObservacaoAlergia: ObservacaoAlergia
+        };
+  
+        fetch('https://localhost:7001/api/CadastrarAlergia', {  // Substitua pela URL correta da API
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            // 'Authorization': 'Bearer <seu-token-aqui>'  // Se necessário
+          },
+          body: JSON.stringify(dados)
+        })
+        .then(response => response.json())
+        .then(data => {
+          alert('Alergia cadastrada com sucesso!');
+          document.getElementsByName('NomeAlergia')[0].value = '';
+          document.getElementsByName('DataDignosticoAlergia')[0].value = '';
+          document.getElementsByName('ObservacaoAlergia')[0].value = '';
+        })
+        .catch(error => {
+          console.error('Erro ao cadastrar alergia:', error);
+          alert('Erro ao cadastrar alergia');
+        });
+      }
+
+
+    </script>
+
+
 </head>
 
 <body>
@@ -31,68 +83,40 @@
 
     <div class="box-table">
 
-      <form name="fPessoas">
+      <form onsubmit="event.preventDefault(); cadastrarAlergia();" name="fPessoas">
+
         <div id="dfPessoas" class="container">
 
-          <div class="box-label">
-
-            <label class="label-tabela">Tipo de alergia</label>
-            <label class="label-tabela">Causa</label>
-            <label class="label-tabela">Medicamento</label>
-            <label class="label-tabela">Sintomas</label>
-
-          </div>
-
-          <div class="box-input">
-
-            <input type="text" name="txtData" class="input-tabela">
-            <input type="number" name="txtConsulta" class="input-tabela">
-            <input type="datetime" name="txtMedico" class="input-tabela">
-            <input type="text" name="txtClinica" class="input-tabela">
-
-          </div>
+          <!-- <form onsubmit="event.preventDefault(); cadastrarAlergia();" name="fPessoas"> -->
+            <div class="box-label">
+              <label class="label-tabela">Tipo de alergia</label>
+              <label class="label-tabela">Data</label>
+              <label class="label-tabela">Observações</label>
+            </div>
+            
+            <div class="box-input">
+              <input type="text" name="NomeAlergia" id="NomeAlergia" class="input-tabela" required>
+              <input type="datetime-local" name="DataDignosticoAlergia" id="DataDignosticoAlergia" class="input-tabela" required>
+              <input type="text" name="ObservacaoAlergia" id="ObservacaoAlergia" class="input-tabela" required>
+            </div>
         
+            <!-- <button type="submit" onclick="cadastrarAlergia()">Cadastrar Alergia</button> -->
+          <!-- </form> -->
+
         </div>
 
-        <input class="button-event" type="button" value="Salvar" 
-        onclick="cadPessoa(txtData.value, txtConsulta.value, txtMedico.value, txtClinica.value)"> 
-        
-        <br> <br>
+
+        <button type="submit" class="button-event" onclick="cadastrarAlergia()">Salvar</button>
 
       </form>
 
 
     </div>
 
-<!-- <br> <br> -->
-
-    <!-- <div id="dtPessoas">
-
-      <table id="tbPessoas">
-          <thead>
-              <tr>
-
-                  <td>codigo</td>
-                  <td>Data</td>
-                  <td>Consulta</td>
-                  <td>Médico</td>
-                  <td>Clínica</td>
-                  <td>Ação</td>
-              
-                </tr>
-          </thead>
-      </table>
-    </div> -->
 
 
 
 
-  <script>
-    // Carregando os arquivos HTML
-    loadHTML('header-container', '../../Otimizar/NavigationTop.html');
-    loadHTML('content-container', '../../Otimizar/NavigationLeft.html');
-    // loadHTML('footer-container', 'footer.html');
-  </script>
 
 </body>
 </html>

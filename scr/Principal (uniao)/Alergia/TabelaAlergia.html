@@ -10,12 +10,93 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 
 
   <link rel="stylesheet" href="../../../token/Fragmentos/TabelaVisual.css">
   <script src="../../Otimizar/CarregaConteudoHtml.js"></script>
   <link rel="stylesheet" href="../../../token/NavigationLeft.css">
   <link rel="stylesheet" href="../../../token/NavigationTop.css">
+
+  <script>
+    // Função para buscar dados de alergias e exibir na tabela
+    function getAlergias() {
+      fetch('https://localhost:7001/api/CadastrarAlergia', {  // Substitua pela URL correta da sua API
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer <seu-token-aqui>'  // Se necessário
+        }
+      })
+      .then(response => response.json())
+      .then(data => {
+        const tableBody = document.getElementById('alergias-table-body');
+        tableBody.innerHTML = '';  // Limpa a tabela antes de adicionar novos dados
+        data.forEach(alergia => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td>${alergia.tipoAlergia}</td>
+            <td>${alergia.dataAlergia}</td>
+            <td>${alergia.observacaoAlergia}</td>
+            <td>
+              <button class="button-event" onclick="editarAlergia(${alergia.id})">Editar</button>
+              <button class="button-event" onclick="deletarAlergia(${alergia.id})">Excluir</button>
+            </td>
+          `;
+          tableBody.appendChild(row);
+        });
+      })
+      .catch(error => console.error('Erro ao carregar alergias:', error));
+    }
+
+    // Função para editar alergia (funcionalidade simples de exemplo)
+    function editarAlergia(id) {
+      alert(`Editando alergia com ID: ${id}`);
+    }
+
+    // Função para excluir alergia (funcionalidade simples de exemplo)
+    function deletarAlergia(id) {
+      if (confirm('Você tem certeza que deseja excluir esta alergia?')) {
+        fetch(`https://localhost:7001/api/CadastrarAlergia/${id}`, {  // Substitua pela URL correta da API
+          method: 'DELETE',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer <seu-token-aqui>'  // Se necessário
+          }
+        })
+        .then(response => {
+          if (response.ok) {
+            alert('Alergia excluída com sucesso!');
+            getAlergias(); // Atualiza a tabela
+          } else {
+            alert('Erro ao excluir alergia');
+          }
+        })
+        .catch(error => console.error('Erro ao excluir alergia:', error));
+      }
+    }
+
+    // Função de pesquisa para filtrar os dados da tabela
+    function pesquisaAlergia() {
+      const filtro = document.getElementsByName('filtroAlergia')[0].value.toLowerCase();
+      const rows = document.querySelectorAll('#alergias-table-body tr');
+      rows.forEach(row => {
+        const tipoAlergia = row.cells[0].textContent.toLowerCase();
+        const dataAlergia = row.cells[1].textContent.toLowerCase();
+        const observacaoAlergia = row.cells[2].textContent.toLowerCase();
+        
+        if (tipoAlergia.includes(filtro) || dataAlergia.includes(filtro) || observacaoAlergia.includes(filtro)) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    // Chama a função ao carregar a página
+    window.onload = getAlergias;
+  </script>
 </head>
 <body>
     <!-- --------- Divs para armazenar Navigations --------- -->
@@ -25,39 +106,34 @@
     <!-- <div id="footer-container"></div> -->
 
     <!-- --------- Divs para armazenar Navigations --------- -->
-    
-  <div class="background-box">
+
+
+    <div class="box-pesquisa">
+      <i class="fas fa-search"></i> <!-- Ícone de pesquisa -->
+      <input type="text" name="filtroAlergia" class="input-tabela-pesquisa" placeholder="Pesquisa" onkeyup="pesquisaAlergia()">
+    </div>
+  
     <div class="container">
       <table class="consulta-tabela">
         <thead>
           <tr>
-            <th>Tipo de alergia</th>
-            <th>Causa</th>
-            <th>Medicamento</th>
-            <th>Sintomas</th>
-            <th></th>
+            <th>Tipo de Alergia</th>
+            <th>Data</th>
+            <th>Observações</th>
+            <th>Ações</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>15/11/2024</td>
-            <td>Dermatologista</td>
-            <td>Jéssica</td>
-            <td>Monte Sinai</td>
-            <td>
-              <button class="button-event">Excluir</button>
-              <button class="button-event">Editar</button>
-            </td>
-          </tr>
+        <tbody id="alergias-table-body">
+          <!-- Os dados serão inseridos aqui via JS -->
         </tbody>
       </table>
+  
       <div class="box-add"> 
-      <button class="button-event" onclick="window.location.href='Alergia.html'">Adicionar</button>
+        <button class="button-event" onclick="window.location.href='Alergia.html'">Adicionar</button>
+      </div>
     </div>
-    </div>
-  </div>
-
   <script>
+
     // Carregando os arquivos HTML
     loadHTML('header-container', '../../Otimizar/NavigationTop.html');
     loadHTML('content-container', '../../Otimizar/NavigationLeft.html');

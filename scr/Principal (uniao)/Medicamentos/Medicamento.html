@@ -13,7 +13,57 @@
     <link rel="stylesheet" href="Medicamento.css">
     <script src="../../Otimizar/CarregaConteudoHtml.js"></script>
     <script src="../../Otimizar/Adicionarpagina.js"></script>
-    <!-- <link rel="stylesheet" href="../../Otimizar/NavigationLeft.html"> -->
+    <link rel="stylesheet" href="../../Otimizar/NavigationLeft.html">
+
+
+    <script>
+    // Carregando os arquivos HTML
+    loadHTML('header-container', '../../Otimizar/NavigationTop.html');
+    loadHTML('content-container', '../../Otimizar/NavigationLeft.html');
+    // loadHTML('footer-container', 'footer.html');
+
+      function cadastrarMedicamento() {
+        const NomeMedicamento = document.getElementsByName('NomeMedicamento')[0].value;
+        const FrequenciaMedicamento = document.getElementsByName('FrequenciaMedicamento')[0].value;
+        const HorarioMedicamento = document.getElementsByName('HorarioMedicamento')[0].value;
+        const FinalidadeMedicamento = document.getElementsByName('FinalidadeMedicamento')[0].value;
+        // Validação simples
+        if (!NomeMedicamento || !FrequenciaMedicamento || !HorarioMedicamento || !FinalidadeMedicamento)  {
+          alert('Por favor, preencha todos os campos!');
+          return;
+        }
+  
+        const dados = {
+          NomeMedicamento: NomeMedicamento,
+          FrequenciaMedicamento: FrequenciaMedicamento,
+          HorarioMedicamento: HorarioMedicamento,
+          FinalidadeMedicamento: FinalidadeMedicamento
+        };
+  
+        fetch('https://localhost:7001/api/CadastrarMedicamento', {  // Substitua pela URL correta da API
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            // 'Authorization': 'Bearer <seu-token-aqui>'  // Se necessário
+          },
+          body: JSON.stringify(dados)
+        })
+        .then(response => response.json())
+        .then(data => {
+          alert('Medicamento cadastrado com sucesso!');
+          document.getElementsByName('NomeMedicamento')[0].value = '';
+          document.getElementsByName('FrequenciaMedicamento')[0].value = '';
+          document.getElementsByName('HorarioMedicamento')[0].value = '';
+          document.getElementsByName('FinalidadeMedicamento')[0].value = '';
+        })
+        .catch(error => {
+          console.error('Erro ao cadastrar Medicamento:', error);
+          alert('Erro ao cadastrar Medicamento');
+        });
+      }
+    </script>
+  
+
 
 </head>
 
@@ -32,8 +82,9 @@
     <div class="box-table">
 
 
-      <form name="fPessoas">
-        
+      <!-- <form name="fPessoas"> -->
+        <form onsubmit="event.preventDefault(); cadastrarMedicamento();" name="fPessoas">
+
         <div id="dfPessoas" class="container">
 
           <div class="box-label">
@@ -48,54 +99,27 @@
 
           <div class="box-input">
 
-            <input type="text" name="txtData" class="input-tabela">
-            <input type="number" name="txtConsulta" class="input-tabela">
-            <input type="datetime" name="txtMedico" class="input-tabela">
-            <input type="text" name="txtClinica" class="input-tabela">
+            <input type="text" name="NomeMedicamento" id="NomeMedicamento" class="input-tabela" required>
+            <input type="text" name="FrequenciaMedicamento" id="FrequenciaMedicamento" class="input-tabela" required>
+            <input type="datetime-local" name="HorarioMedicamento" id="HorarioMedicamento" class="input-tabela" required>
+            <input type="text" name="FinalidadeMedicamento" id="FinalidadeMedicamento" class="input-tabela" required>
 
           </div>
         
         </div>
 
-        <input class="button-event" type="button" value="Salvar" 
-        onclick="cadPessoa(txtData.value, txtConsulta.value, txtMedico.value, txtClinica.value)"> 
-        
-        <br> <br>
+        <!-- <input class="button-event" type="button" value="Salvar" onclick="cadastrarMedicamento()">  -->
+        <button type="submit" class="button-event" onclick="cadastrarMedicamento()">Salvar</button>
+
 
       </form>
 
 
     </div>
 
-<!-- <br> <br> -->
-
-    <!-- <div id="dtPessoas">
-
-      <table id="tbPessoas">
-          <thead>
-              <tr>
-
-                  <td>codigo</td>
-                  <td>Data</td>
-                  <td>Consulta</td>
-                  <td>Médico</td>
-                  <td>Clínica</td>
-                  <td>Ação</td>
-              
-                </tr>
-          </thead>
-      </table>
-    </div> -->
 
 
 
-
-  <script>
-    // Carregando os arquivos HTML
-    loadHTML('header-container', '../../Otimizar/NavigationTop.html');
-    loadHTML('content-container', '../../Otimizar/NavigationLeft.html');
-    // loadHTML('footer-container', 'footer.html');
-  </script>
 
 </body>
 </html>

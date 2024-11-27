@@ -7,12 +7,66 @@
     <title>Glicose</title>
 
     <!-- Importação de arquivos -->
-    <script src="glicose.js"></script>
+    <!-- <script src="glicose.js"></script> -->
     <link rel="stylesheet" href="glicose.css">
     <link rel="stylesheet" href="PopupGlicose/PopUpGlicose.css">
     <script src="../../Otimizar/CarregaConteudoHtml.js"></script>
     <script src="../../Otimizar/Adicionarpagina.js"></script>
     <script src="PopupGlicose/PopUpGlicose.js"> </script>
+    
+
+    <script>
+          // Carregando os arquivos HTML
+    loadHTML('header-container', '../../Otimizar/NavigationTop.html');
+    loadHTML('content-container', '../../Otimizar/NavigationLeft.html');
+    // loadHTML('footer-container', 'footer.html');
+
+function cadastrarGlicose() {
+    const NivelGlicose = document.getElementsByName('NivelGlicose')[0].value;
+    const DataGlicose = document.getElementsByName('DataGlicose')[0].value;
+    const ObservacaoGlicose = document.getElementsByName('ObservacaoGlicose')[0].value;
+
+    // Validação simples
+    if (!NivelGlicose || !DataGlicose || !ObservacaoGlicose) {
+      alert('Por favor, preencha todos os campos!');
+      return;
+    }
+
+    const dados = {
+      NivelGlicose: NivelGlicose,
+      DataGlicose: DataGlicose,
+      ObservacaoGlicose: ObservacaoGlicose
+    };
+
+    fetch('https://localhost:7001/api/CadastrarGlicose', {  // Substitua pela URL correta da API
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        // 'Authorization': 'Bearer <seu-token-aqui>'  // Se necessário
+      },
+      body: JSON.stringify(dados)
+    })
+    .then(response => response.json())
+    .then(data => {
+      alert('Cadastro efetuado com sucesso');
+      document.getElementsByName('NivelGlicose')[0].value = '';
+      document.getElementsByName('DataGlicose')[0].value = '';
+      document.getElementsByName('ObservacaoGlicose')[0].value = '';
+    })
+    .catch(error => {
+      console.error('Erro ao cadastrar:', error);
+      alert('Erro ao cadastrar');
+    });
+  }
+
+
+
+
+
+
+    </script>
+
+
 
 </head>
 
@@ -29,16 +83,17 @@
     
 
     <div class="box-table">
+      <form onsubmit="event.preventDefault(); cadastrarGlicose();" name="fPessoas">
 
-      <form name="fPessoas">
+      <!-- <form name="fPessoas"> -->
         <div id="dfPessoas" class="container">
 
           <div class="box-label">
 
-            <label class="label-tabela" >Data</label>
-            <label class="label-tabela">Horário</label>
-            <label class="label-tabela">Nivel de glicose</label>
-            <label class="label-tabela">Jejum</label>
+            <label class="label-tabela" >Nível</label>
+            <label class="label-tabela">Data</label>
+            <label class="label-tabela">Observação</label>
+            <!-- <label class="label-tabela">Jejum</label> -->
 
           </div>
           
@@ -46,9 +101,9 @@
 
           <div class="box-input">
 
-            <input type="date" name="txtData" class="input-tabela">
-            <input type="time" name="txtConsulta" class="input-tabela">
-            <input type="number" name="txtMedico" class="input-tabela">
+            <input type="text" name="NivelGlicose" id="NivelGlicose" class="input-tabela" required>
+            <input type="datetime-local" name="DataGlicose" id="DataGlicose" class="input-tabela" required>
+            <input type="text" name="ObservacaoGlicose" id="ObservacaoGlicose" class="input-tabela" required>
             
             <div class="box-yesno"> 
 
@@ -62,8 +117,9 @@
         </div>
         
         <div class="buttons"> 
-        <input class="button-event" type="button" value="Salvar" 
-        onclick="cadPessoa(txtData.value, txtConsulta.value, txtMedico.value, txtClinica.value)"> 
+        <!-- <input class="button-event" type="button" value="Salvar" 
+        onclick="cadPessoa(txtData.value, txtConsulta.value, txtMedico.value, txtClinica.value)">  -->
+        <button type="submit" class="button-event" onclick="cadastrarGlicose()">Salvar</button>
 
           <button class="open-button" type="button" onclick="abrirPopup()">?</button>
         </div>        
@@ -118,12 +174,7 @@
 
 
 
-  <script>
-    // Carregando os arquivos HTML
-    loadHTML('header-container', '../../Otimizar/NavigationTop.html');
-    loadHTML('content-container', '../../Otimizar/NavigationLeft.html');
-    // loadHTML('footer-container', 'footer.html');
-  </script>
+
 
 </body>
 </html>

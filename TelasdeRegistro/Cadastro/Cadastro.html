@@ -28,28 +28,31 @@
           <div class="container-input"> 
             <div class="input-box">
               <i class="fas fa-account"></i>
-              <input class="input" type="email" placeholder="Nome">
+              <input class="input" type="email" id="nome" placeholder="Nome" required>
             </div>
 
             <div class="input-box">
               <i class="fa fa-envelope"></i>
-              <input class="input" type="email" placeholder="E-mail">
+              <input class="input" type="email" id="email" placeholder="E-mail" required>
             </div>
 
             <div class="input-box">
               <i class="fas fa-calendar"></i>
-              <input class="input" type="date">
+              <input class="input" type="date" id="dataNascimento" required>
             </div>
 
 
             <div class="input-box">
               <i class="fas fa-lock"></i>
-              <input class="input" type="password" placeholder="Senha">
+              <input class="input" type="password" placeholder="Senha"  id="senha" required>
             </div>
 
           </div>
 
-          <button class="button" type="button" onclick="alterarPagina('../../scr/Principal (uniao)/AdicionarEvento/AdicionarEvento.html')" >Cadastrar</button>
+          <!-- <button class="button" type="button" onclick="alterarPagina('../../scr/Principal (uniao)/AdicionarEvento/AdicionarEvento.html')" >Cadastrar</button> -->
+
+          <button class="button" type="button" onclick="realizarCadastro()">Cadastrar</button>
+
           <span type="button" onclick="alterarPagina('../login1/index.html')">Já tem uma Conta?<a href="#">Entrar</a> </span>
 
                 
@@ -69,9 +72,67 @@
 
     <script>
       // Carregando os arquivos HTML
-      loadHTML('header-container', "../../scr/Otimizar/links.html");
+      // loadHTML('header-container', "../../scr/Otimizar/links.html");
       // loadHTML('footer-container', 'footer.html');
+
+      async function realizarCadastro() {
+      // Capturando os valores dos campos
+      const nome = document.getElementById('nome').value;
+      const email = document.getElementById('email').value;
+      const dataNascimento = document.getElementById('dataNascimento').value;
+      const senha = document.getElementById('senha').value;
+
+      // Verificação básica de preenchimento
+      if (!nome || !email || !dataNascimento || !senha) {
+        alert("Por favor, preencha todos os campos!");
+        return;
+      }
+
+      try {
+        // Enviando a requisição para a API de registro
+        const response = await fetch("https://localhost:7001/api/Account/Register", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: nome,
+            email: email,
+            password: senha,
+            dataNascimento: dataNascimento
+          }),
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          alert("Cadastro realizado com sucesso!");
+          console.log("Dados recebidos:", data);
+
+          // Redireciona para a página principal
+          window.location.href = "../../scr/Principal (uniao)/AdicionarEvento/AdicionarEvento.html";
+        } else {
+          const errorData = await response.json();
+          alert("Erro ao realizar cadastro: " + (errorData.message || "Erro desconhecido."));
+        }
+      } catch (error) {
+        console.error("Erro na requisição:", error);
+        alert("Erro ao se conectar com o servidor.");
+      }
+    }
+
+    // Carregando os arquivos HTML adicionais
+    function loadHTML(containerId, filePath) {
+      fetch(filePath)
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById(containerId).innerHTML = html;
+        })
+        .catch(error => console.error("Erro ao carregar HTML:", error));
+    }
+
+
     </script>
 
 </body>
 </html>
+
